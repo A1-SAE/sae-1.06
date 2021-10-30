@@ -1,0 +1,44 @@
+@import 'composants/appearBoxes';
+
+html, body {
+  margin: 0;
+}
+
+body{
+  background-color: #242424;
+}
+
+#blocksContainer{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:0 20px;
+}
+
+#menu {
+  width:100%;
+  display:flex;
+  justify-content:center;
+
+  .menuElmt{
+    margin: 0 50px;
+  }
+
+  .submenu{
+    .subMenuTitle{
+      cursor:pointer;
+      backgorund-color:red;
+    }
+
+    .subMenuContent{
+      display:none;
+    }
+
+    &:hover .subMenuContent{
+      display:block;
+    }
+  }
+
+
+
+}
