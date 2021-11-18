@@ -1,4 +1,4 @@
-@import 'composants/appearBoxes';
+@import 'composants/menu';
 
 html, body {
   margin: 0;
@@ -13,32 +13,4 @@ body{
   flex-direction:column;
   align-items:center;
   padding:0 20px;
-}
-
-#menu {
-  width:100%;
-  display:flex;
-  justify-content:center;
-
-  .menuElmt{
-    margin: 0 50px;
-  }
-
-  .submenu{
-    .subMenuTitle{
-      cursor:pointer;
-      backgorund-color:red;
-    }
-
-    .subMenuContent{
-      display:none;
-    }
-
-    &:hover .subMenuContent{
-      display:block;
-    }
-  }
-
-
-
 }

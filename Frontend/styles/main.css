@@ -1,20 +1,51 @@
-.appear {
-  background-color: #82c086;
-  border-radius: 10px;
-  width: 37%;
-  min-height: 900px;
-  margin: 30px 0;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+#menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #01C77E;
+  height: 45px;
 }
-.appearRight {
-  align-self: flex-end;
+#menu .subMenu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
 }
-.appearLeft {
-  align-self: flex-start;
+#menu .subMenu .subMenuTitle {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
 }
-.appearCentred {
-  width: 70%;
-  min-height: 400px;
+#menu .subMenu .subMenuTitle a {
+  color: white;
+  text-decoration: none;
+}
+#menu .subMenu .subMenuContent {
+  position: absolute;
+  display: none;
+  background-color: red;
+  top: 45px;
+  padding: 5px 10px;
+}
+#menu .subMenu .subMenuContent a {
+  color: white;
+  text-decoration: none;
+}
+#menu .subMenu:hover .subMenuTitle:not(.active) a {
+  text-decoration: underline;
+}
+#menu .subMenu:hover .subMenuContent {
+  display: block;
+}
+#menu .active {
+  background-color: white !important;
+  height: 100%;
+}
+#menu .active a {
+  color: #01C77E !important;
 }
 
 html, body {
@@ -30,25 +61,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
-}
-
-#menu {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-#menu .menuElmt {
-  margin: 0 50px;
-}
-#menu .submenu .subMenuTitle {
-  cursor: pointer;
-  backgorund-color: red;
-}
-#menu .submenu .subMenuContent {
-  display: none;
-}
-#menu .submenu:hover .subMenuContent {
-  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
