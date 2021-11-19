@@ -3,13 +3,13 @@
   position:fixed;
   display:flex;
   justify-content:center;
-  background-color: #01C77E;
+  background-color: $green;
   height:45px;
-  box-shadow: 0px 1px 20px #5e5e5e;
+  box-shadow: 0px 1px 20px #b4b4b4;
 
   .subMenu{
-    position:relative;
     display:flex;
+    position:relative;
     justify-content:center;
     align-items:center;
     height:100%;
@@ -32,13 +32,13 @@
     .subMenuContent{
       position:absolute;
       display:none;
-      background-color:red;
+      background-color:white;
       top:45px;
       padding:5px 10px;
       opacity:0;
 
       a{
-        color:white;
+        color:$lighterGreen;
         text-decoration: none;
       }
     }
@@ -60,7 +60,7 @@
     height:100%;
 
     a{
-      color: #01C77E !important;
+      color: $green !important;
     }
   }
 
