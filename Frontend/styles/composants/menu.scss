@@ -1,9 +1,11 @@
 #menu {
   width:100%;
+  position:fixed;
   display:flex;
   justify-content:center;
-  background-color:#01C77E;
+  background-color: #01C77E;
   height:45px;
+  box-shadow: 0px 1px 20px #5e5e5e;
 
   .subMenu{
     position:relative;
@@ -22,6 +24,8 @@
       a{
         color:white;
         text-decoration: none;
+        transition:color;
+        transition-duration: 150ms;
       }
     }
 
@@ -31,6 +35,7 @@
       background-color:red;
       top:45px;
       padding:5px 10px;
+      opacity:0;
 
       a{
         color:white;
@@ -41,10 +46,11 @@
     &:hover{
 
       .subMenuTitle:not(.active) a{
-        text-decoration: underline;
+        color: #e3e3e3;
       }
       .subMenuContent{
         display:block;
+        opacity:1;
       }
     }
   }
