@@ -1,86 +1,192 @@
+.logo img{
+  height:45px;
+}
+#menu > .logo{
+  position:absolute;
+  left:10px;
+  top:0;
+}
+
 #menu {
+  top:0;
   width:100%;
   position:fixed;
-  display:flex;
-  justify-content:center;
   background-color:white;
-  height:45px;
-  top:0;
   box-shadow: 0px 1px 20px #b4b4b4;
 
-  .subMenu{
+  #menu_content{
     display:flex;
-    position:relative;
     justify-content:center;
     align-items:center;
     height:100%;
-    cursor:pointer;
 
-    .subMenuTitle{
+    .subMenu{
+
       display:flex;
+      position:relative;
+      justify-content:center;
       align-items:center;
-      padding: 0 15px;
+      height:100%;
       cursor:pointer;
-      user-select:none;
 
-      a{
-        color:black;
-        font-weight: bolder;
-        text-decoration: none;
-        transition:color;
-        transition-duration: 150ms;
+      &:hover{
+        .subMenuTitle a{
+          color:$green !important;
+        }
       }
-    }
-
-    .subMenuContent{
-      position:absolute;
-      display:none;
-      background-color:white;
-      top:45px;
-      padding:2.5px 10px 5px 10px;
-      min-width:100px;
-      opacity:0;
-      user-select:none;
-      border-bottom-left-radius: 7px;
-      border-bottom-right-radius: 7px;
-      align-items:center;
-      flex-direction:column;
-
-      .menuElmt{
-        margin:2.5px 0;
+      .subMenuTitle{
+        display:flex;
+        align-items:center;
+        padding: 0 15px;
+        cursor:pointer;
+        user-select:none;
 
         a{
           color:black;
-          font-weight: bold;
+          font-weight: bolder;
           text-decoration: none;
           transition:color;
           transition-duration: 150ms;
-          white-space: nowrap;
         }
-        &:hover a{
+      }
+
+      .subMenuContent{
+        .menuElmt{
+          margin:2.5px 0;
+
+          a{
+            color:black;
+            font-weight: bold;
+            text-decoration: none;
+            transition:color;
+            transition-duration: 150ms;
+            white-space: nowrap;
+          }
+          &:hover a{
+            color:$green;
+          }
+        }
+
+
+      }
+
+      &:hover{
+        a{
+          color:$green;
+        }
+      }
+
+      &:hover{
+        .subMenuContent{
+          display:flex;
+          opacity:1;
+        }
+        a{
           color:$green;
         }
       }
     }
+  }
+}
 
-    &:hover{
-      .subMenuContent{
+#menu{
+  width:calc(100% - 20px);
+  padding:0 10px;
+  z-index:10;
+
+
+  #mobile_burger{
+    display:none;
+    background-color:black;
+    width:25px;
+    height:45px;
+    border-radius:2.5px;
+    position:absolute;
+    right:10px;
+    top:-1px;
+    cursor:pointer;
+  }
+}
+
+@media screen and (max-width:725px){
+  .logo{
+    align-self:flex-end;
+  }
+
+  #menu{
+    padding-top:45px;
+
+    #mobile_burger{
+      display:block;
+
+      &:hover + #menu_content{
         display:flex;
-        opacity:1;
       }
-      a{
-        color:$green;
+    }
+
+    #menu_content{
+      display:none;
+      box-shadow: none;
+      flex-direction:column;
+      height:auto;
+      padding:20px 0;
+
+      &:hover{
+        display:flex;
+      }
+      .logo{
+        display:none;
+      }
+
+      .subMenu{
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        .subMenuTitle a{
+          color:$softGreen !important;
+          font-size:larger;
+        }
+        .subMenuContent{
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+        }
       }
     }
   }
+}
 
-  /*.active{
-    background-color:white !important;
-    height:100%;
+@media screen and (min-width:726px){
+  #menu {
+    height: 45px;
 
-    a{
-      color: $green !important;
+    #menu_content {
+      .subMenu {
+        position: relative;
+
+        .subMenuContent {
+          position: absolute;
+          display: none;
+          background-color: white;
+          top: 45px;
+          padding: 2.5px 10px 5px 10px;
+          min-width: 100px;
+          opacity: 0;
+          user-select: none;
+          border-bottom-left-radius: 7px;
+          border-bottom-right-radius: 7px;
+          align-items: center;
+          flex-direction: column;
+
+        }
+
+        &:hover {
+          .subMenuContent {
+            display: flex;
+            opacity: 1;
+          }
+        }
+      }
     }
-  }*/
-
+  }
 }

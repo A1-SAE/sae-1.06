@@ -9,7 +9,6 @@ section{
 }
 
 .timelineContainer{
-  width:calc(45vw + 50px);
   display:flex;
   align-items: stretch;
   margin-top:150px;
@@ -61,13 +60,13 @@ section{
   }
 }
 
-@media screen and (max-width:550px){
+@media screen and (max-width:600px){
   .timelineContainer{
     margin-left:0;
+    width:calc(200px + 60px);
 
     .contentContainer{
       width:200px;
-
     }
 
     .greenIt, .greenWashing{
@@ -93,9 +92,10 @@ section{
   }
 }
 
-@media screen and (min-width:551px){
+@media screen and (min-width:601px){
   .timelineContainer{
-    margin-left:calc( 0vw + calc(40vw + 25px));
+    width:calc(40vw + 60px);
+    margin-left:calc(40vw + 50px);
     left:0;
     margin-right: 0;
 

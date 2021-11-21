@@ -9,7 +9,6 @@ section {
 }
 
 .timelineContainer {
-  width: calc(45vw + 50px);
   display: flex;
   align-items: stretch;
   margin-top: 150px;
@@ -27,7 +26,7 @@ section {
 }
 .timelineContainer .content > *:last-child {
   position: absolute;
-  bottom: -20px;
+  top: calc(100% - 20px);
   margin-bottom: 0;
 }
 .timelineContainer .content > *:first-child {
@@ -54,9 +53,10 @@ section {
   margin: 10px 0;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .timelineContainer {
     margin-left: 0;
+    width: 260px;
   }
   .timelineContainer .contentContainer {
     width: 200px;
@@ -80,9 +80,10 @@ section {
     background-color: #A55BFF;
   }
 }
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   .timelineContainer {
-    margin-left: calc(0vw + 40vw + 25px);
+    width: calc(40vw + 60px);
+    margin-left: calc(40vw + 50px);
     left: 0;
     margin-right: 0;
   }
