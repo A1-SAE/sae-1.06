@@ -1,0 +1,118 @@
+section {
+  width: 100vw;
+  /*overflow-x:hidden;
+  overflow-y: visible;*/
+  overscroll-behavior-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timelineContainer {
+  width: calc(45vw + 50px);
+  display: flex;
+  align-items: stretch;
+  margin-top: 150px;
+}
+.timelineContainer .timeline {
+  width: 10px;
+  background-color: #4ED4A3;
+  border-radius: 5px;
+}
+.timelineContainer .content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 20px;
+}
+.timelineContainer .content > *:last-child {
+  position: absolute;
+  bottom: -20px;
+  margin-bottom: 0;
+}
+.timelineContainer .content > *:first-child {
+  margin-top: 0;
+}
+.timelineContainer .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.timelineContainer .contentContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0.5px 20px #b4b4b4;
+}
+.timelineContainer .contentContainer h1, .timelineContainer .contentContainer h2, .timelineContainer .contentContainer h3, .timelineContainer .contentContainer h4, .timelineContainer .contentContainer h5, .timelineContainer .contentContainer h6, .timelineContainer .contentContainer p {
+  margin: 0;
+}
+.timelineContainer .greenWashing, .timelineContainer .greenIt {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 550px) {
+  .timelineContainer {
+    margin-left: 0;
+  }
+  .timelineContainer .contentContainer {
+    width: 200px;
+  }
+  .timelineContainer .greenIt, .timelineContainer .greenWashing {
+    left: -15px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .timelineContainer .greenIt .contentContainer, .timelineContainer .greenWashing .contentContainer {
+    left: 15px;
+  }
+  .timelineContainer .greenIt .circle, .timelineContainer .greenWashing .circle {
+    background-color: #02A66A;
+  }
+  .timelineContainer .greenIt {
+    flex-direction: row-reverse;
+  }
+  .timelineContainer .greenIt .circle {
+    background-color: #A55BFF;
+  }
+}
+@media screen and (min-width: 551px) {
+  .timelineContainer {
+    margin-left: calc(0vw + 40vw + 25px);
+    left: 0;
+    margin-right: 0;
+  }
+  .timelineContainer .contentContainer {
+    width: 40vw;
+  }
+  .timelineContainer .greenIt {
+    right: calc(100% - 5px);
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .timelineContainer .greenIt .contentContainer {
+    right: 15px;
+  }
+  .timelineContainer .greenIt .circle {
+    background-color: #02A66A;
+  }
+  .timelineContainer .greenWashing {
+    left: -15px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .timelineContainer .greenWashing .contentContainer {
+    left: 15px;
+  }
+  .timelineContainer .greenWashing .circle {
+    background-color: #A55BFF;
+  }
+}
+
+/*# sourceMappingURL=chronologie.css.map */

@@ -3,7 +3,35 @@
   src: url("../../fonts/glacial-indifference");
 }
 h1, h2, h3, h4, h5, h6, p, li, a {
-  font-family: glacialIndifference, sans-serif;
+  font-family: glacialIndifference, Arial;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: xxx-large;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+h4 {
+  font-size: large;
+}
+
+h5 {
+  font-size: medium;
+}
+
+h6 {
+  font-size: small;
 }
 
 #menu {
@@ -11,9 +39,18 @@ h1, h2, h3, h4, h5, h6, p, li, a {
   position: fixed;
   display: flex;
   justify-content: center;
-  background-color: #02C77F;
+  background-color: white;
   height: 45px;
+  top: 0;
   box-shadow: 0px 1px 20px #b4b4b4;
+  /*.active{
+    background-color:white !important;
+    height:100%;
+
+    a{
+      color: $green !important;
+    }
+  }*/
 }
 #menu .subMenu {
   display: flex;
@@ -28,9 +65,11 @@ h1, h2, h3, h4, h5, h6, p, li, a {
   align-items: center;
   padding: 0 15px;
   cursor: pointer;
+  user-select: none;
 }
 #menu .subMenu .subMenuTitle a {
-  color: white;
+  color: black;
+  font-weight: bolder;
   text-decoration: none;
   transition: color;
   transition-duration: 150ms;
@@ -40,26 +79,35 @@ h1, h2, h3, h4, h5, h6, p, li, a {
   display: none;
   background-color: white;
   top: 45px;
-  padding: 5px 10px;
+  padding: 2.5px 10px 5px 10px;
+  min-width: 100px;
   opacity: 0;
+  user-select: none;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  align-items: center;
+  flex-direction: column;
 }
-#menu .subMenu .subMenuContent a {
-  color: #4ED4A3;
+#menu .subMenu .subMenuContent .menuElmt {
+  margin: 2.5px 0;
+}
+#menu .subMenu .subMenuContent .menuElmt a {
+  color: black;
+  font-weight: bold;
   text-decoration: none;
+  transition: color;
+  transition-duration: 150ms;
+  white-space: nowrap;
 }
-#menu .subMenu:hover .subMenuTitle:not(.active) a {
-  color: #e3e3e3;
+#menu .subMenu .subMenuContent .menuElmt:hover a {
+  color: #02C77F;
 }
 #menu .subMenu:hover .subMenuContent {
-  display: block;
+  display: flex;
   opacity: 1;
 }
-#menu .active {
-  background-color: white !important;
-  height: 100%;
-}
-#menu .active a {
-  color: #02C77F !important;
+#menu .subMenu:hover a {
+  color: #02C77F;
 }
 
 html, body {
@@ -68,14 +116,13 @@ html, body {
 
 body {
   background-color: #e1e1e1;
-  min-height: 100vh;
-}
-
-#blocksContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 20px;
+  padding-top: 45px;
+  min-height: calc(100vh - 45px);
+  background-image: url("../imgs/fond.png");
+  background-size: 150px;
+  background-position: center;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

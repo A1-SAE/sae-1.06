@@ -1,0 +1,131 @@
+section{
+  width:100vw;
+  /*overflow-x:hidden;
+  overflow-y: visible;*/
+  overscroll-behavior-y: auto;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.timelineContainer{
+  width:calc(45vw + 50px);
+  display:flex;
+  align-items: stretch;
+  margin-top:150px;
+
+  .timeline{
+    width:10px;
+    background-color:$lighterGreen;
+    border-radius:5px;
+  }
+
+  .content{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    padding-bottom:20px;
+
+    > *:last-child{
+      position:absolute;
+      bottom:-20px;
+      margin-bottom:0;
+    }
+    > *:first-child{
+      margin-top:0;
+    }
+  }
+
+  .circle{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+  }
+
+  .contentContainer{
+    display:flex;
+    position:relative;
+    flex-direction:column;
+    background-color:white;
+    padding:10px 15px;
+    border-radius:10px;
+    box-shadow: 0px .5px 20px #b4b4b4;
+
+    h1, h2, h3, h4, h5, h6, p{
+      margin:0;
+    }
+  }
+
+  .greenWashing, .greenIt{
+    margin:10px 0;
+  }
+}
+
+@media screen and (max-width:550px){
+  .timelineContainer{
+    margin-left:0;
+
+    .contentContainer{
+      width:200px;
+
+    }
+
+    .greenIt, .greenWashing{
+      left:-15px;
+      position:relative;
+      display:flex;
+      justify-content:flex-start;
+      .contentContainer{
+        left:15px;
+      }
+      .circle{
+        background-color:$darkerGreen;
+      }
+    }
+
+    .greenIt{
+      flex-direction: row-reverse;
+
+      .circle{
+        background-color:$greenwashing;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:551px){
+  .timelineContainer{
+    margin-left:calc( 0vw + calc(40vw + 25px));
+    left:0;
+    margin-right: 0;
+
+    .contentContainer{
+      width:40vw;
+    }
+
+    .greenIt{
+      right:calc(100% - 5px);
+      position:relative;
+      display:flex;
+      justify-content:flex-end;
+      .contentContainer{
+        right:15px;
+      }
+      .circle{
+        background-color:$darkerGreen;
+      }
+    }
+    .greenWashing{
+      left:-15px;
+      position:relative;
+      display:flex;
+      justify-content:flex-start;
+      .contentContainer{
+        left:15px;
+      }
+      .circle{
+        background-color: $greenwashing;
+      }
+    }
+  }
+}
