@@ -1,0 +1,20 @@
+#pestel > div {
+  position: relative;
+}
+#pestel .content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+#pestel label {
+  cursor: pointer;
+}
+#pestel input[type=radio] {
+  display: none;
+}
+#pestel input[type=radio]:checked + .content {
+  display: flex;
+}
+
+/*# sourceMappingURL=enjeux.css.map */
