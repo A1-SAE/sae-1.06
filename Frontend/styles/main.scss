@@ -40,3 +40,9 @@ a{
     text-align: left;
   }
 }
+
+@media screen and (min-width:1500px){
+  p{
+    font-size:1.3em;
+  }
+}
