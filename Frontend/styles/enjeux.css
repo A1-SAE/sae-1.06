@@ -32,6 +32,9 @@
   #pestel .content {
     width: calc(95vw - 120px);
   }
+  #pestel #pestelBlock {
+    margin-bottom: 350px;
+  }
 }
 
 /*# sourceMappingURL=enjeux.css.map */

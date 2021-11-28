@@ -27,6 +27,11 @@ h1{
 
 p{
   text-align:justify;
+  line-height:18pt;
+}
+
+a{
+  word-break: break-word;
 }
 
 @media screen and (max-width:700px) {
