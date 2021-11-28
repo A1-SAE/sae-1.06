@@ -6,6 +6,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 300px;
 }
 
 .timelineContainer {
@@ -25,7 +26,7 @@ section {
 }
 .timelineContainer .content > *:last-child {
   position: absolute;
-  bottom: -20px;
+  top: calc(100% - 20px);
   margin-bottom: 0;
 }
 .timelineContainer .content > *:first-child {

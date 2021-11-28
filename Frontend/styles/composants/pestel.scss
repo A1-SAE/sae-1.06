@@ -1,6 +1,8 @@
 #pestel{
-  > div{
+
+  #pestelBlock{
     position:relative;
+    margin-bottom:200px;
   }
 
   .content{
@@ -8,8 +10,7 @@
     position:absolute;
     top:0;
     left:80px;
-    width:calc(80vw - 150px);
-
+    width:calc(80vw - 120px);
   }
 
   label{
@@ -33,5 +34,11 @@
     &:checked + .content{
       display:flex;
     }
+  }
+}
+
+@media screen and (max-width:550px){
+  #pestel .content{
+    width:calc(95vw - 120px);
   }
 }
