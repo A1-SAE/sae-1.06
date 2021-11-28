@@ -51,16 +51,10 @@
   &Left{
     width:30%;
     min-width:150px;
-    height: fit-content;
+    //height: fit-content;
     float:left;
     margin: 0 10px 0 0;
   }
-}
-
-h1{
-  width:100%;
-  text-align: center;
-  color:$darkerGreen;
 }
 
 @media screen and (max-width:550px){

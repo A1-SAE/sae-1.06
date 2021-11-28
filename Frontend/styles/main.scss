@@ -18,3 +18,19 @@ body {
   overflow-x: hidden;
   min-width:320px;
 }
+
+h1{
+  width:100%;
+  text-align: center;
+  color:$darkerGreen;
+}
+
+p{
+  text-align:justify;
+}
+
+@media screen and (max-width:700px) {
+  p{
+    text-align: left;
+  }
+}

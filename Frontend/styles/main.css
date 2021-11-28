@@ -245,15 +245,8 @@ h6 {
 .littleImgLeft {
   width: 30%;
   min-width: 150px;
-  height: fit-content;
   float: left;
   margin: 0 10px 0 0;
-}
-
-h1 {
-  width: 100%;
-  text-align: center;
-  color: #02A66A;
 }
 
 @media screen and (max-width: 550px) {
@@ -275,6 +268,22 @@ body {
   width: 100vw;
   overflow-x: hidden;
   min-width: 320px;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: #02A66A;
+}
+
+p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 700px) {
+  p {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
