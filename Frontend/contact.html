@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,13 +57,53 @@
     </div>
 </nav>
 
-<h1>h1</h1>
-<h2>h2</h2>
-<h3>h3</h3>
-<h4>h4</h4>
-<h5>h5</h5>
-<h6>h6</h6>
-<p>p</p>
+<h1>Contactez nous</h1>
+
+<section class="notionLikeSection">
+    <form class="block" method="post" action="traitement.php">
+        <label for="nom">Nom : </label>
+        <input type="text" name="nom" id="nom">
+
+        <label for="prenom">Prénom : </label>
+        <input type="text" name="prenom" id="prenom">
+
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email">
+
+        <input for="codePostal">Code postal : </input>
+        <input type="number" name="codePostal" id="email">
+
+        <label for="pays">Pays : </label>
+        <select name="pays" id="pays">
+            <option value="France">France</option>
+            <option value="Espagne">Espagne</option>
+            <option value="Italie">Italie</option>
+            <option value="Royaume-uni">Royaume-Uni</option>
+            <option value="Canada">Canada</option>
+            <option value="États-unis">États-Unis</option>
+            <option value="Chine">Chine</option>
+            <option value="Japon">Japon</option>
+        </select>
+
+        <p>Vous avez entendu parlé de nous via ?</p>
+        <div>
+            <span>
+                <input type="radio" name="sourceUtilisateur" value="google" id="google">
+                <label for="google">Google</label>
+            </span>
+
+            <span>
+                <input type="radio" name="sourceUtilisateur" value="bouche à oreille" id="boucheAOreille">
+                <label for="boucheAOreille">Bouche à oreille</label>
+            </span>
+
+            <span>
+                <input type="radio" name="sourceUtilisateur" value="reseauxSociaux" id="reseauxSociaux">
+                <label for="reseauxSociaux">Réseaux Sociaux</label>
+            </span>
+        </div>
+    </form>
+</section>
 
 
 <footer>
