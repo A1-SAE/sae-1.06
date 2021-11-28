@@ -44,7 +44,7 @@
   &Rigth{
     width:30%;
     min-width:150px;
-    height: fit-content;
+    //height: fit-content;
     float: right;
     margin: 0 0 0 10px;
   }
@@ -57,6 +57,11 @@
   }
 }
 
+h1{
+  width:100%;
+  text-align: center;
+  color:$darkerGreen;
+}
 
 @media screen and (max-width:550px){
   .notionLikeSection{

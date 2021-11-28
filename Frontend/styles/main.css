@@ -239,7 +239,6 @@ h6 {
 .littleImgRigth {
   width: 30%;
   min-width: 150px;
-  height: fit-content;
   float: right;
   margin: 0 0 0 10px;
 }
@@ -249,6 +248,12 @@ h6 {
   height: fit-content;
   float: left;
   margin: 0 10px 0 0;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: #02A66A;
 }
 
 @media screen and (max-width: 550px) {
