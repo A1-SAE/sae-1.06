@@ -195,26 +195,6 @@ h6 {
     opacity: 1;
   }
 }
-/*
-.neumorphism{
-  border-radius: 10px;
-  background: linear-gradient(145deg, rgba(203, 203, 203, 0.2), rgba(241, 241, 241, 0.2));
-  box-shadow:  14px 14px 43px #898989, -14px -14px 43px #ffffff;
-  padding: 10px 15px;
-  width:60%;
-  margin:auto;
-  text-align:center;
-}
-
-.neumorphism2{
-  border-radius: 10px;
-  background: transparent;
-  box-shadow: inset 14px 14px 43px #898989, inset -14px -14px 43px #ffffff;
-  padding: 10px 15px;
-  width:60%;
-  margin:auto;
-  text-align:center;
-}*/
 .block {
   display: flex;
   flex-direction: column;
