@@ -1,12 +1,28 @@
 section {
   width: 100vw;
-  /*overflow-x:hidden;
-  overflow-y: visible;*/
   overscroll-behavior-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 300px;
+}
+
+#titles {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#titles h2 {
+  width: calc(50% - 30px);
+  margin: 0 15px;
+  white-space: nowrap;
+}
+#titles h2:first-child {
+  color: #02A66A;
+  text-align: right;
+}
+#titles h2:last-child {
+  color: #A55BFF;
 }
 
 .timelineContainer {
@@ -54,6 +70,10 @@ section {
 }
 
 @media screen and (max-width: 600px) {
+  #titles {
+    flex-direction: column;
+  }
+
   .timelineContainer {
     margin-left: 0;
     width: 260px;
