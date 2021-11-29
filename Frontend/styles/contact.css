@@ -22,6 +22,7 @@ form p {
 }
 form textarea {
   min-height: 100px;
+  max-width: calc(100% - 10px);
 }
 form div:not(:first-of-type) {
   width: 100%;

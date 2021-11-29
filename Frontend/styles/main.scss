@@ -48,3 +48,10 @@ a{
     font-size:1.3em;
   }
 }
+
+@media screen and (max-width:650px){
+  body{
+    padding: calc(45px + 150px) 0 200px 0;
+    min-height: calc(100vh - calc(calc(45px + 150px) + 200px));
+  }
+}

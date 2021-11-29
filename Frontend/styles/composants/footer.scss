@@ -27,3 +27,18 @@ footer{
     right:20px;
   }
 }
+
+@media screen and (max-width:650px){
+  footer{
+    flex-direction: column;
+    height:150px;
+
+    a{
+      margin:20px 0;
+    }
+
+    img{
+      position:static;
+    }
+  }
+}

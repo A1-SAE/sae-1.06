@@ -224,6 +224,18 @@ footer img {
   right: 20px;
 }
 
+@media screen and (max-width: 650px) {
+  footer {
+    flex-direction: column;
+    height: 150px;
+  }
+  footer a {
+    margin: 20px 0;
+  }
+  footer img {
+    position: static;
+  }
+}
 .block {
   display: flex;
   flex-direction: column;
@@ -339,6 +351,12 @@ a {
 @media screen and (min-width: 1500px) {
   p {
     font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 650px) {
+  body {
+    padding: 195px 0 200px 0;
+    min-height: calc(100vh - 395px);
   }
 }
 
