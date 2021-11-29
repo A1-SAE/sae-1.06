@@ -15,16 +15,13 @@
 
   label{
     cursor:pointer;
+    display:inline;
+    margin:10px;
+    font-size:50px;
+    font-family: "Avera Serif Libre", serif;
 
-    h3{
-      display:inline;
-      margin:10px;
-      font-size:50px;
-      font-family: "Avera Serif Libre", serif;
-
-      &:hover{
-        color:$green;
-      }
+    &:hover{
+      color:$green;
     }
   }
 
