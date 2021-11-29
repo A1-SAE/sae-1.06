@@ -6,7 +6,7 @@
   font-family: "Avera Serif Libre";
   src: url("../../fonts/Averia_Serif_Libre");
 }
-h1, h2, h3, h4, h5, h6, p, li, a {
+h1, h2, h3, h4, h5, h6, p, li, a, input, label {
   font-family: glacialIndifference, Arial, sans-serif;
 }
 
@@ -73,13 +73,15 @@ h6 {
   color: #02C77F !important;
 }
 #menu #menu_content .subMenu .subMenuTitle {
-  display: flex;
-  align-items: center;
+  height: 100%;
   padding: 0 15px;
   cursor: pointer;
   user-select: none;
 }
 #menu #menu_content .subMenu .subMenuTitle a {
+  display: flex;
+  align-items: center;
+  height: 100%;
   color: black;
   font-weight: bolder;
   text-decoration: none;
@@ -204,6 +206,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 1px 20px #b4b4b4;
 }
 footer a {
   color: black;
@@ -263,6 +266,39 @@ footer img {
     padding: 0 2.5%;
   }
 }
+.btn, .btnWhite {
+  min-width: 200px;
+  height: 50px;
+  padding: 0 20px;
+  background-color: #02C77F;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px #b4b4b4;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.btn:hover:not(:disabled), .btnWhite:hover:not(:disabled) {
+  background-color: #4ED4A3;
+}
+.btn:disabled, .btnWhite:disabled {
+  background-color: #02A66A;
+}
+.btnWhite {
+  background-color: white;
+  color: black;
+}
+.btnWhite:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+.btnWhite:disabled {
+  background-color: #8a8a8a;
+}
+
 html, body {
   margin: 0;
 }
@@ -277,6 +313,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
   min-width: 320px;
+  position: relative;
 }
 
 h1 {

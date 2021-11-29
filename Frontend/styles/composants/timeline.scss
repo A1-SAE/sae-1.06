@@ -1,4 +1,4 @@
-section{
+section:first-of-type{
   width:100vw;
   overscroll-behavior-y: auto;
   display:flex;
@@ -30,6 +30,11 @@ section{
 .timelineContainer{
   display:flex;
   align-items: stretch;
+
+  a{
+    color:black;
+    text-decoration: none;
+  }
 
   .timeline{
     width:10px;

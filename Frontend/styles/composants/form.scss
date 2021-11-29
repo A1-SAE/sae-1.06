@@ -1,0 +1,43 @@
+form{
+  input[type="text"], input[type="email"], input[type="number"] textarea{
+    border:none;
+    border-bottom:solid black 1px;
+    border-radius:0;
+    display:flex;
+    align-items: center;
+    height:25px;
+  }
+
+  input, textarea{
+    margin-bottom:10px;
+
+    &:focus{
+      outline:none;
+    }
+  }
+
+  div:first-of-type{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  p{
+    margin:0;
+  }
+
+  textarea{
+    min-height:100px;
+  }
+
+  div:not(:first-of-type){
+    width:100%;
+    display:flex;
+    justify-content:center;
+
+    input[type="submit"]{
+      margin-top:50px;
+
+    }
+  }
+}

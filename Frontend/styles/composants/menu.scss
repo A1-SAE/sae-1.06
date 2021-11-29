@@ -35,13 +35,15 @@
         }
       }
       .subMenuTitle{
-        display:flex;
-        align-items:center;
+        height:100%;
         padding: 0 15px;
         cursor:pointer;
         user-select:none;
 
         a{
+          display:flex;
+          align-items: center;
+          height:100%;
           color:black;
           font-weight: bolder;
           text-decoration: none;

@@ -3,6 +3,7 @@
 @import 'composants/menu';
 @import "composants/footer";
 @import 'composants/content';
+@import "composants/btns";
 
 html, body {
   margin: 0;
@@ -18,6 +19,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
   min-width:320px;
+  position:relative;
 }
 
 h1{

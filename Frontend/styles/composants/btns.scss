@@ -1,0 +1,38 @@
+.btn{
+  min-width:200px;
+  height:50px;
+  padding:0 20px;
+  background-color:$green;
+  color:white;
+  border:none;
+  border-radius:10px;
+  box-shadow: 0 1px 5px #b4b4b4;
+  cursor:pointer;
+  text-decoration: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+
+  &:hover:not(:disabled){
+    background-color: $lighterGreen;
+  }
+
+  &:disabled{
+    background-color: $darkerGreen;
+  }
+
+  &White{
+    @extend .btn;
+    background-color:white;
+    color:black;
+
+    &:hover:not(:disabled){
+      background-color: #e0e0e0;
+    }
+
+    &:disabled{
+      background-color: #8a8a8a;
+    }
+  }
+}

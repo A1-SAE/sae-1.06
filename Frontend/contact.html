@@ -4,77 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Accueil</title>
+    <title>Contactez nous</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
-<nav id="menu">
-    <a href="index.html"  class="logo">
-        <img src="imgs/logo.png">
-    </a>
-    <div id="mobile_burger">
-        <div></div>
-    </div>
-    <div id="menu_content">
-        <div class="subMenu">
-            <div class="subMenuTitle active"><a href="index.html">Accueil</a></div>
-            <div class="subMenuContent">
-                <div class="menuElmt"><a href="#">subélément</a></div>
-                <div class="menuElmt"><a href="#">subélément</a></div>
+    <header>
+        <nav id="menu">
+            <a href="index.html"  class="logo">
+                <img src="imgs/logo.png">
+            </a>
+            <div id="mobile_burger">
+                <div></div>
             </div>
-        </div>
-        <div class="subMenu">
-            <div class="subMenuTitle"><a href="green-washing.html">Green Washing</a></div>
-            <div class="subMenuContent">
-                <div class="menuElmt"><a href="green-washing.html#définition">Définition</a></div>
-                <div class="menuElmt"><a href="green-washing.html#acteurs">Acteurs</a></div>
-                <div class="menuElmt"><a href="green-washing.html#pourEtContre">Pour et contre</a></div>
-                <div class="menuElmt"><a href="green-washing.html#champsScientifiques">Champs scientifiques</a></div>
+            <div id="menu_content">
+                <div class="subMenu">
+                    <div class="subMenuTitle active"><a href="index.html">Accueil</a></div>
+                </div>
+                <div class="subMenu">
+                    <div class="subMenuTitle"><a href="green-washing.html">Green Washing</a></div>
+                    <div class="subMenuContent">
+                        <div class="menuElmt"><a href="green-washing.html#définition">Définition</a></div>
+                        <div class="menuElmt"><a href="green-washing.html#acteurs">Acteurs</a></div>
+                        <div class="menuElmt"><a href="green-washing.html#pourEtContre">Pour et contre</a></div>
+                    </div>
+                </div>
+                <div class="subMenu">
+                    <div class="subMenuTitle"><a href="green-it.html">Green IT</a></div>
+                    <div class="subMenuContent">
+                        <div class="menuElmt"><a href="green-it.html#définition">Définition</a></div>
+                        <div class="menuElmt"><a href="green-it.html#acteurs">Acteurs</a></div>
+                    </div>
+                </div>
+                <div class="subMenu">
+                    <div class="subMenuTitle"><a href="enjeux.html">Enjeux</a></div>
+                    <div class="subMenuContent">
+                        <div class="menuElmt"><a href="enjeux.html#pestel">PESTEL</a></div>
+                    </div>
+                </div>
+                <div class="subMenu">
+                    <div class="subMenuTitle"><a href="chronologie.html">Chronologie</a></div>
+                </div>
             </div>
-        </div>
-        <div class="subMenu">
-            <div class="subMenuTitle"><a href="green-it.html">Green IT</a></div>
-            <div class="subMenuContent">
-                <div class="menuElmt"><a href="green-it.html#définition">Définition</a></div>
-                <div class="menuElmt"><a href="green-it.html#acteurs">Acteurs</a></div>
-                <div class="menuElmt"><a href="green-it.html#pourEtContre">Pour et contre</a></div>
-                <div class="menuElmt"><a href="green-it.html#champsScientifiques">Champs scientifiques</a></div>
-            </div>
-        </div>
-        <div class="subMenu">
-            <div class="subMenuTitle"><a href="enjeux.html">Enjeux</a></div>
-            <div class="subMenuContent">
-                <div class="menuElmt"><a href="enjeux.html#pestel">PESTEL</a></div>
-            </div>
-        </div>
-        <div class="subMenu">
-            <div class="subMenuTitle"><a href="chronologie.html">Chronologie</a></div>
-            <!--<div class="subMenuContent">
-                <div class="menuElmt"><a href="#">subélément</a></div>
-                <div class="menuElmt"><a href="#">subélément</a></div>
-            </div>-->
-        </div>
-    </div>
-</nav>
+        </nav>
+    </header>
 
 <h1>Contactez nous</h1>
 
 <section class="notionLikeSection">
     <form class="block" method="post" action="traitement.php">
         <label for="nom">Nom : </label>
-        <input type="text" name="nom" id="nom">
+        <input type="text" name="nom" id="nom" placeholder="White" required>
 
         <label for="prenom">Prénom : </label>
-        <input type="text" name="prenom" id="prenom">
+        <input type="text" name="prenom" id="prenom" placeholder="Walter" required>
 
         <label for="email">Email : </label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" placeholder="heisenberg@orange.fr" required>
 
-        <input for="codePostal">Code postal : </input>
-        <input type="number" name="codePostal" id="email">
+        <label for="codePostal">Code postal : </label>
+        <input type="number" name="codePostal" id="codePostal" placeholder="34090" required>
 
         <label for="pays">Pays : </label>
-        <select name="pays" id="pays">
+        <select name="pays" id="pays" required>
             <option value="France">France</option>
             <option value="Espagne">Espagne</option>
             <option value="Italie">Italie</option>
@@ -85,10 +77,14 @@
             <option value="Japon">Japon</option>
         </select>
 
+        <label for="date">Date à laquelle vous souhaitez être recontacté</label>
+        <input type="date" name="date" id="date" required>
+
+
         <p>Vous avez entendu parlé de nous via ?</p>
         <div>
             <span>
-                <input type="radio" name="sourceUtilisateur" value="google" id="google">
+                <input type="radio" name="sourceUtilisateur" value="google" id="google" checked required>
                 <label for="google">Google</label>
             </span>
 
@@ -101,13 +97,20 @@
                 <input type="radio" name="sourceUtilisateur" value="reseauxSociaux" id="reseauxSociaux">
                 <label for="reseauxSociaux">Réseaux Sociaux</label>
             </span>
+
+            <label for="expressionLibre">Expression libre : </label>
+            <textarea id="expressionLibre" placeholder="Une remarque, recommendation, autre, dites ce que vous voulez !"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" class="btn" value="Envoyer">
         </div>
     </form>
 </section>
 
-
-<footer>
-    <a href=""
-</footer>
+    <footer>
+        <a href="./contact.html">Nous contacter</a>
+        <img src="imgs/logo_iut.png" alt="logo de l'iut">
+    </footer>
 </body>
 </html>
